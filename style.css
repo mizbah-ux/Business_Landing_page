@@ -10,6 +10,8 @@ body{
 }
 section{
     padding: 90px 5%;
+    width: 100%;
+    min-height: 100vh;
 }
 header{
     display: flex;
@@ -104,17 +106,21 @@ ul li a{
     url(Assets/hero-left-bg.png),
     url(Assets/hero-right-bg.png),
     url(Assets/about-banner.png),
-     url(Assets/about-bottom-right-dot.png);
+    url(Assets/about-bottom-right-dot.png), 
+    url(Assets/Services-left-banner.png);
     background-position: 
     left top,
     right top,
     300px 1200px,
-    70rem 105rem;
+    70rem 105rem,
+    0% 120em;
+
     background-size: 
     auto,
     550px,
     850px,
-    auto;
+    auto,
+    600px;
     background-repeat: no-repeat;
 }
 .About{
@@ -151,14 +157,35 @@ ul li a{
     width: 8%;
 }
 .Service-Growth-Wrap{
+    margin-top: 250px;
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 10%;
+    padding-left: 20%;
+    background-image: 
+   
+    url(Assets/Services-left-bottom-dot.png),
+    url(Assets/Services-center-dot.png),
+    url(Assets/Services-right-bottom-dot.png);
+    background-size: auto,auto,auto;
+    background-position: 9% 60%,55% 33%,85% 95%;
+    background-repeat: no-repeat;
 
+}
+.Service-Growth-Wrap section{
+    padding-left: 0%;
+    
 }
 .Service{
     width: 100%;
     height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
     
 }
 .Service .service-card{
@@ -172,10 +199,25 @@ ul li a{
     align-items: center;
     justify-content: center;
     background-color: #ffffff ;
-    
+    /* default per-card shift variable; individual cards override --shift */
+    --shift: 0px;
+    transform: translateY(var(--shift));
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* left column (1 & 3) lift up 30px */
+.Service .service-card:nth-child(odd){
+    --shift: -30px;
+    z-index: 2; /* lifted cards appear above */
+}
+
+/* right column (2 & 4) drop 15px */
+.Service .service-card:nth-child(even){
+    --shift: 15px;
 }
 .service-card img{
-    width: 20rem;
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin: 0px 10px ;
     
@@ -191,12 +233,29 @@ ul li a{
     font-size: 20px;
     font-weight: 400;
 }
-.Growth{
-    display: grid;
+.service-card:hover {
+    /* Move relative to the card's base shift so hover is consistent */
+    transform: translateY(calc(var(--shift, 0px) - 10px));
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+}
 
+.Growth{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+
+}
+.Growth img{
+    position: absolute;
+    right: -85px;
+    top: 40px;
 }
 .Growth .sub-til{
     color: #8a8787;
+    
 }
 .Growth .growth-main{
     font-size: 3rem;
