@@ -139,11 +139,11 @@ ul li a{
     background-position: 15% 90%,12% 32%,77% 45%,80% 100%;
 
 }
-#p-about{
+#p-title{
     color: #727171;
     padding-bottom: 20px;
 }
-#h1-about{
+#h1-title{
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     font-size: 3rem;
@@ -253,8 +253,9 @@ ul li a{
     right: -85px;
     top: 40px;
 }
-.Growth .sub-til{
+.sub-til{
     color: #8a8787;
+    margin-bottom: 20px;
     
 }
 .Growth .growth-main{
@@ -268,7 +269,7 @@ ul li a{
 .Growth .description{
     color: #8a8787;
 }
-.btn-growth{
+.btn{
     height: 50px;
     width: 200px;
     border-radius: 50px;
@@ -276,4 +277,145 @@ ul li a{
     color: #dfdfdf;
     border: 1px solid #dfdfdf;
     margin-top: 30px;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc; 
+  margin: 20px 0; 
+  width: 50%; 
+}
+.Price-Testimonials-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Price{
+    width: 100vw;
+    background-color: #f8fbff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.Price .header{
+    width: 100vw;
+    min-height:auto;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 120px;
+    padding-left: 250px;
+    padding-top: 50px;
+    h1{
+        font-size: 55px;
+        font-weight: 550;
+    }
+}
+.Price .toggle{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(to right,#253fe7,#3187ff);
+    border: none;
+    position: absolute;
+    top: 150px;
+    right: 300px;
+    border-radius: 50px;
+}
+.toggle button{
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    background: white;
+    
+}
+.toggle button:nth-last-child(1){
+    background-color: transparent;
+    
+}
+.price-cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 300px;
+    height: 650px;
+    padding: 10px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4),-2px -2px 12px rgba(255, 255, 255, 0.7);
+    h1{
+        margin-top: 50px;
+        font-size: 15px;
+        display: inline-block;
+        padding: 5px 20px;
+    }
+
+    sub{font-size: 1rem;}
+
+    h2{
+        font-family:  Patrick Hand;
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    h3{
+        color: #8a8787;
+        font-weight: 200;
+        margin-bottom: 50px;
+    }
+    p{
+        color: #8a8787;
+        font-size:0.9rem;
+    }
+    .btn{
+        margin-top: 50px;
+        transition: backgrround 0.3s,;
+    }
+    .btn:hover{
+        color: #ffffff;
+        background: linear-gradient(to right,#253fe7,#3187ff,#ddd);
+    }
+    
+    
+
+}
+.basic{
+    h1{
+        background: rgb(238, 250, 255);
+        color: #00b7fa;
+    }
+    sub{color: #00b7fa;    }
+}
+.advanced{
+    h1{
+        background: rgb(255, 244, 234);
+        color: rgb(255, 123, 9);
+    }
+    sub{color: rgb(255, 123, 9);}
+}
+.team{
+    h1{
+        background: rgb(227, 255, 247);
+        color: rgb(58, 198, 162);
+    }
+    sub{color: rgb(58, 198, 162);}
 }
