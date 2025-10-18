@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
     <title>Home</title>
 </head>
 <body>
     <header>
       <nav class="navbar">
-        <ul type="none">
-          <li><a href="">Who We Are?</a></li>
+        <ul type="none" id="nav-left">
+          <li><a href="">Who we are?</a></li>
           <li><a href="">Solution</a></li>
           <li><a href="">Portfolio</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Contact</a></li>
-          <li><a href=""></a></li>
-          </ul>
-          <ul type="none">
+        </ul>
+        <ul type="none">
           <li><a href="">Suppot</a></li>
           <li><a href="">Sign In</a></li>
         </ul>
       </nav>
-      <button class="btn-primary">Get A Quote</button>
+      <button type="submit" class="btn-primary">Get A Quote</button>
     </header>
     <section class="hero-wrapper">
        <section class="hero">
-          <button class="btn-one">Welcome To The Game</button>
-          <p id="hero-main">Empower<br>Your Business <br><strong>Better & Faster</strong></p>
-          <button class="btn-hero">Get Started Now</button>
+          <button type="submit" class="btn-one">Welcome To The Game</button>
+          <p id="hero-main">Empower<br>Your Business <br class="mobile-hide"><strong>Better & Faster</strong></p>
+          <button type="button" class="btn-hero">Get Started Now</button>
         </section>
         <section class="About">
           <p id="p-title">About us</p>
@@ -37,30 +36,30 @@
         </section>
 
         <section class="Service-Growth-Wrap">
-         <section class="Service">
+          <section class="Service">
            
-             <div class="service-card">
-               <img src="Assets/uiux-card-image.png" alt="">
-               <h3>UI/UX Design</h3>
-               <p>Landing pages,User Flow,Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>  
-             </div>
-             <div class="service-card">
-               <img src="Assets/webdesign-card-image.png" alt="">
-               <h3>Web Design</h3>
-               <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
-             </div>
-             <div class="service-card">
-               <img src="Assets/branding-card-image.png" alt="">
-               <h3>Branding</h3>
-               <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
-             </div>
-             <div class="service-card">
-               <img src="Assets/product-card-image.png" alt="">
-               <h3>Product Design</h3>
-               <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
-             </div>
+            <div class="service-card">
+              <img src="Assets/uiux-card-image.png" alt="">
+              <h3>UI/UX Design</h3>
+              <p>Landing pages,User Flow,Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>  
+            </div>
+            <div class="service-card">
+              <img src="Assets/webdesign-card-image.png" alt="">
+              <h3>Web Design</h3>
+              <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
+            </div>
+            <div class="service-card">
+              <img src="Assets/branding-card-image.png" alt="">
+              <h3>Branding</h3>
+              <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
+            </div>
+            <div class="service-card">
+              <img src="Assets/product-card-image.png" alt="">
+              <h3>Product Design</h3>
+              <p>Landing pages,User Flow,<br>Wireframin,Prototyping,<br>Mobile AppDesign,Web App</p>
+            </div>
            
-         </section>
+          </section>
 
          <section class="Growth">
           <img src="Assets/Services-contact-banner.png" alt="">
@@ -71,18 +70,19 @@
            
           </section>
 
-      </section>
+        </section>
 
       <section class="Price-Testimonials-Container">
           <div class="Price">
             <div class="header">
               <p id="p-title">Price & Plan</p>
-              <h1 >Choose A Plan That's <br>Right For you</h1>
+              <h1 >Choose A Plan That's <br class="mobile-hide">Right For you</h1>
+              <div class="line">          </div>
               <div class="toggle">
                 <button type="button">Monthly</button>
                 <button type="button" disabled>Yearly</button>
               </div>
-              <div class="line">          </div>
+              
             </div>
             <div class="price-cards">
               <div class="card basic">
@@ -124,7 +124,7 @@
           <div class="Testimonials">
             <div class="testimonials-dscpt">
               <h1>Testimonials</h1>
-              <h2>Our Happy <br>Client Say's <br>About Us</h2>
+              <h2>Our Happy <br class="mobile-hide">Client Say's <br class="mobile-hide">About Us</h2>
               <div class="line">          </div>
               <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam, quis nostrud exercitation <br>ullamco laboris nisi ut aliquip ex ea commodo <br>consequat.</p>
             </div>
@@ -169,7 +169,7 @@
       <div class="Portfolio">
         <div class="Portfolio-header">
           <p>Portfolio</p>
-          <h1>We Have So Many <br>Awesome Stuffs</h1>
+          <h1>We Have So Many <br class="mobile-hide">Awesome Stuffs</h1>
           <div class="line">          </div>
         </div>
         <div class="Portfolio-cards">
@@ -242,9 +242,9 @@
           <div class="footer-left">
            
             <div class="social-icon">
-              <a href="#" class="bi bi-facebook"></a>
-              <a href="#" class="bi bi-youtube"></a>
-              <a href="#" class="bi bi-twitter"></a>
+              <a href="#" class="bi bi-facebook" id="FB"></a>
+              <a href="#" class="bi bi-youtube" id="YT"></a>
+              <a href="#" class="bi bi-twitter" id="TW"></a>
             </div>
             <p>© Copyright</p>
           </div>
