@@ -844,7 +844,7 @@ hr {
     
 }
 /* Resposive view */
-@media (maxwidth:992px) {
+@media (max-width:992px) {
     .Portfolio-cards{
         grid-template-columns: 1fr;
         
